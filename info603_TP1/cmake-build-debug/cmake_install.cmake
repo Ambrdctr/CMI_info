@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ambroisedecouttere/Documents/UNIVERSITE/LICENCE_3/SEMESTRE_6/INFO603_SemAx/info603_TP1
+# Install script for directory: /Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ambroisedecouttere/Documents/UNIVERSITE/LICENCE_3/SEMESTRE_6/INFO603_SemAx/info603_TP1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
