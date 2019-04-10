@@ -7,9 +7,17 @@
 // #define NDEBUG
 #include <assert.h>
 
-#define TAILLE 1000
+#define TAILLE 10
 
 using namespace std;
+
+
+void afficheTab(int t[]){
+    for (int i = 0; i < TAILLE; ++i) {
+        cout << " | " << t[i] ;
+    }
+    cout << endl;
+}
 
 void fillRandom(int t[]) {
     srand(time(NULL));
@@ -125,15 +133,16 @@ void triInsertSeq(int t[]) {
 void tri3Zones(int t[], int i) {
     int a, b, min, posMin, max, posMax, current;
     a = 0;
-    b = i;
-    if (i > 0) {
-        min = t[0];
-        max = t[0];
-        posMin = 0;
-        posMax = 0;
-    }
-    while (a < b) {
-        for (int k = a; k < b; ++k) {
+    b = i-1;
+
+    while (a <= b) {
+        if (i > 0) {
+            min = t[a];
+            max = t[b];
+            posMin = a;
+            posMax = a;
+        }
+        for (int k = a; k <= b; k++) {
             current = t[k];
             if (current < min) {
                 min = current;
@@ -144,23 +153,26 @@ void tri3Zones(int t[], int i) {
                 posMax = k;
             }
         }
-        t[posMin] = t[a + 1];
-        t[a + 1] = min;
-        t[posMax] = t[b - 1];
-        t[b - 1] = max;
+        cout << a << " " << posMin << " " << min << " " << b << " " << posMax << " " << max << endl;
+        //if(posMax == a){
+          //  posMax = posMin;
+        //}
+        t[posMin] = t[a];
+        t[a] = min;
+        if(posMax == a) {
+            posMax = posMin;
+        }
+        t[posMax] = t[b];
+        t[b] = max;
         a++;
         b--;
+        afficheTab(t);
     }
 }
 
 
 
-void afficheTab(int t[]){
-    for (int i = 0; i < TAILLE; ++i) {
-        cout << " | " << t[i] ;
-    }
-    cout << endl;
-}
+
 
 
 int main() {
@@ -168,9 +180,10 @@ int main() {
     fillRandom(t);
     cout << "Tableau initial : ";
     afficheTab(t);
-    triInsertSeq(t);
-    cout << "Tri insertion sequentielle : ";
-    //tri3Zones(t, TAILLE-1);
+    //triInsertSeq(t);
+    //cout << "Tri insertion sequentielle : ";
+    cout << "Tri trois zones : " << endl;
+    tri3Zones(t, TAILLE);
     afficheTab(t);
     return 0;
 }
