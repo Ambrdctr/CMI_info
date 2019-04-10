@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/info603_TP1.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/info603_TP1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/info603_TP1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="155" column="77" lean-forward="true" selection-start-line="155" selection-start-column="77" selection-end-line="155" selection-end-column="77" />
+            <state relative-caret-position="99">
+              <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -164,7 +163,7 @@
       <updated>1553076479705</updated>
       <workItem from="1553076481258" duration="3151000" />
       <workItem from="1553674360663" duration="9792000" />
-      <workItem from="1554896560917" duration="5614000" />
+      <workItem from="1554896560917" duration="6090000" />
     </task>
     <task id="LOCAL-00001" summary="TP2">
       <created>1553682987813</created>
@@ -173,11 +172,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553682987813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="TP2">
+      <created>1554902229545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554902229545</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18557000" />
+    <option name="totallyTimeSpent" value="19033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -221,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="155" column="77" lean-forward="true" selection-start-line="155" selection-start-column="77" selection-end-line="155" selection-end-column="77" />
+        <state relative-caret-position="99">
+          <caret line="144" column="38" lean-forward="true" selection-start-line="144" selection-start-column="38" selection-end-line="144" selection-end-column="38" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
