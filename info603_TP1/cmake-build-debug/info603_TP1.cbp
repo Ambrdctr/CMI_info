@@ -81,6 +81,12 @@
 		<Unit filename="/Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1/main.cpp">
 			<Option target="info603_TP1"/>
 		</Unit>
+		<Unit filename="/Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1/pile.cpp">
+			<Option target="info603_TP1"/>
+		</Unit>
+		<Unit filename="/Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1/pile.h">
+			<Option target="info603_TP1"/>
+		</Unit>
 		<Unit filename="/Users/ambroisedecouttere/Documents/GitHub/CMI_info/info603_TP1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -7,7 +7,7 @@
 // #define NDEBUG
 #include <assert.h>
 
-#define TAILLE 10
+#define TAILLE 11
 
 using namespace std;
 
@@ -135,13 +135,13 @@ void tri3Zones(int t[], int i) {
     a = 0;
     b = i-1;
 
-    while (a <= b) {
-        if (i > 0) {
-            min = t[a];
-            max = t[b];
-            posMin = a;
-            posMax = a;
-        }
+    while (a < b) {
+
+        min = t[a];
+        max = t[b];
+        posMin = a;
+        posMax = b;
+
         for (int k = a; k <= b; k++) {
             current = t[k];
             if (current < min) {
@@ -153,10 +153,8 @@ void tri3Zones(int t[], int i) {
                 posMax = k;
             }
         }
-        cout << a << " " << posMin << " " << min << " " << b << " " << posMax << " " << max << endl;
-        //if(posMax == a){
-          //  posMax = posMin;
-        //}
+        //cout << a << " " << posMin << " " << min << " " << b << " " << posMax << " " << max << endl;
+
         t[posMin] = t[a];
         t[a] = min;
         if(posMax == a) {
@@ -166,25 +164,45 @@ void tri3Zones(int t[], int i) {
         t[b] = max;
         a++;
         b--;
-        afficheTab(t);
+
     }
 }
 
 
 
 
-
+bool estTrie(int tab[]){
+    for (int i = 0; i < TAILLE-1; ++i) {
+        if (tab[i] > tab[i+1]){
+            return false;
+        }
+    }
+    return true;
+}
 
 int main() {
     int t[TAILLE];
-    fillRandom(t);
-    cout << "Tableau initial : ";
-    afficheTab(t);
+    int result = 0;
+    int nbTest = 1000;
+    //fillRandom(t);
+    //cout << "Tableau initial : ";
+    //afficheTab(t);
     //triInsertSeq(t);
     //cout << "Tri insertion sequentielle : ";
-    cout << "Tri trois zones : " << endl;
-    tri3Zones(t, TAILLE);
-    afficheTab(t);
+    //cout << "Tri trois zones : " << endl;
+    //tri3Zones(t, TAILLE);
+    //afficheTab(t);
+    for (int i = 0; i < nbTest; ++i) {
+        fillRandom(t);
+        tri3Zones(t, TAILLE);
+        if (!estTrie(t)){
+            cout << i << " non" << endl;
+        }
+        else {
+            result ++;
+        }
+    }
+    cout << "Nombre de tri réussi : " << result << "/" << nbTest << endl;
     return 0;
 }
 

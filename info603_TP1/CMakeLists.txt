@@ -3,4 +3,4 @@ project(info603_TP1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(info603_TP1 main.cpp)
+add_executable(info603_TP1 main.cpp pile.cpp pile.h)

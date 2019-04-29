@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/info603_TP1.dir/main.cpp.o"
+  "CMakeFiles/info603_TP1.dir/pile.cpp.o"
   "info603_TP1.pdb"
   "info603_TP1"
 )
